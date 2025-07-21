@@ -1,0 +1,121 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Model and data files
+*.pth
+*.pt
+*.bin
+*.h5
+*.ckpt
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.wav
+*.mp3
+*.flac
+*.m4a
+
+# Data directories
+data/raw/*
+data/processed/*
+data/augmented/*
+models/pretrained/*
+models/finetuned/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/augmented/.gitkeep
+!models/pretrained/.gitkeep
+!models/finetuned/.gitkeep
+
+# Logs and outputs
+logs/
+runs/
+outputs/
+results/
+*.log
+wandb/
+.cache/
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~*
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Custom
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/

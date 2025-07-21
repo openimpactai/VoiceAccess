@@ -1,0 +1,56 @@
+# Default configuration for VoiceAccess
+
+# Model configuration
+model_type: wav2vec2
+model_name: facebook/wav2vec2-base
+hidden_size: 768
+num_attention_heads: 12
+num_hidden_layers: 12
+vocab_size: 32
+
+# Audio processing
+sample_rate: 16000
+n_mels: 80
+n_fft: 400
+hop_length: 160
+win_length: 400
+max_audio_length: 30  # seconds
+
+# Training configuration
+batch_size: 8
+learning_rate: 0.0001
+num_epochs: 30
+warmup_steps: 500
+gradient_accumulation_steps: 1
+mixed_precision: true
+
+# Device configuration
+device: cuda  # or cpu
+num_workers: 4
+
+# Data augmentation
+augmentation_enabled: true
+noise_prob: 0.3
+speed_perturb_range: [0.9, 1.1]
+pitch_shift_range: [-2, 2]
+
+# Language adaptation
+adapter_hidden_size: 256
+adapter_dropout: 0.1
+freeze_base_model: true
+
+# Paths
+data_dir: data
+model_dir: models
+log_dir: logs
+cache_dir: .cache
+
+# Logging
+log_level: INFO
+log_to_file: true
+
+# API configuration
+api_host: 0.0.0.0
+api_port: 8000
+api_workers: 4
+max_concurrent_requests: 10
